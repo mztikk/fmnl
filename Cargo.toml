@@ -1,0 +1,20 @@
+[package]
+name = "fmnl"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Formats newlines of input with a given string"
+authors = ["mztikk <mztikk@outlook.de>"]
+repository = "https://github.com/mztikk/fmnl"
+homepage = "https://github.com/mztikk/fmnl"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[dependencies]
+atty = "0.2"
+structopt = "0.3"
